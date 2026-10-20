@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum de Fotos Offline</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <h1 class="titulo-album">Minha pessoa favorita</h1>
+    <div class="subtitulo-album">Você me inspira todos os dias, obrigada por existir, eu te amo!!</div>
+
+    <div class="album-container">
+        
+        <div class="foto-box" onclick="abrirModal('img/foto1.jpeg', 'Obrigada por nunca soltar minha mão.')">
+            <img src="img/foto1.jpeg" alt="Melhor Amiga">
+            <div class="legenda">Protetora</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto2.jpeg', 'Você é o meu maior exemplo de força.')">
+            <img src="img/foto2.jpeg" alt="Mamãe">
+            <div class="legenda">Inspiradora</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto3.jpeg', 'Admiro muito a mulher incrível que você é.')">
+            <img src="img/foto3.jpeg" alt="Tia">
+            <div class="legenda">Esforçada</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto4.jpeg', 'Obrigada por todos os conselhos.')">
+            <img src="img/foto4.jpeg" alt="Tia">
+            <div class="legenda">Conselheira</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto5.jpeg', 'Você me irrita, mas eu te amo!!')">
+            <img src="img/foto5.jpeg" alt="Irmã">
+            <div class="legenda">Bondosa</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto6.jpeg', 'Obrigada por sempre me incentivar.')">
+            <img src="img/foto6.jpeg" alt="Vovó">
+            <div class="legenda">Cuidadosa</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto7.jpeg', 'Obrigada por me apoiar em todos os meus projetos.')">
+            <img src="img/foto7.jpeg" alt="Vovó">
+            <div class="legenda">Leal</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto8.jpeg', 'Obrigada por sempre reforçar sua admiração por mim.')">
+            <img src="img/foto8.jpeg" alt="Vovó">
+            <div class="legenda">Meu porto seguro</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto9.jpeg', 'Obrigada por me educar, graças a você eu me tornei quem sou hoje.')">
+            <img src="img/foto9.jpeg" alt="Mamãe">
+            <div class="legenda">Eu te amo mãe!!</div>
+        </div>
+        
+    </div>
+
+    <audio controls autoplay loop class="musica-fundo">
+        <source src="audio/musica2.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <div class="container-botao-voltar">
+        <a href="index.html" class="botao-voltar">
+            <i class="fa-solid fa-arrow-left"></i> Voltar
+        </a>
+    </div>
+
+    <div class="modal" id="meuModal">
+        <span class="btn-fechar" onclick="fecharModal()">&times;</span>
+        <img id="imagemModal" src="" alt="Foto em tela cheia">
+        <div class="legenda-modal" id="textoModal"></div>
+    </div>
+
+</body>
+<script src="https:vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget(
+    'https://vlibras.gov.br/app',
+    'https://vlibras.gov.br/config/default_logo.json',
+    'random',
+    'R'
+  );
+</script>
+</html>

@@ -1,0 +1,42 @@
+body {
+      background: linear-gradient(135deg, #060029, #060029, #060029);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    
+
+/* ESTILIZAÇÃO DO VÍDEO DO PORTFÓLIO */
+.video-portfolio {
+  width: 100%;                  /* Garante responsividade em telas pequenas */
+  max-width: 400px;             /* Ajustado para um tamanho mais compacto */
+  display: block;               
+  margin: 20px auto 10px auto;  /* Centraliza o vídeo */
+  
+  /* Cores e Formato do Tema */
+  border: 4px solid #000000;    
+  border-radius: 16px;          
+  background-color: #000000;    
+  
+  /* Sombra Neon Combinando com o Projeto */
+  box-shadow: 0 8px 25px rgba(2, 1, 58, 0.6); 
+  
+  /* Transição Suave */
+  transition: all 0.3s ease;
+  outline: none;                
+}
+
+/* Efeito ao passar o rato (mouse) por cima do vídeo */
+.video-portfolio:hover {
+  transform: scale(1.02);       
+  box-shadow: 0 10px 30px rgba(4, 0, 255, 0.95); 
+}
+
+/* CONTAINER PARA CENTRALIZAR O BOTÃO */
+.container-botao-voltar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto; 
+  width: 100%;
+}
